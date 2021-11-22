@@ -1,0 +1,23 @@
+{
+  "name": "aaa_thai_dictionary",
+  "version": "1.0.0",
+  "description": "a Thai Dictionary designed to assist students of AAA Thai Language School",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "start": "app.js"
+  },
+  "keywords": [
+    "thai",
+    "dictionary",
+    "AAA",
+    "Thai",
+    "Language",
+    "School"
+  ],
+  "author": "Matthew Dwyer",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "12.16.1"
+  }
+}

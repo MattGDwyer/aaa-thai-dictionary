@@ -1,12 +1,18 @@
-let PORT = process.env.PORT || 8000;
-let express = require("express");
-let app = express();
+var express = require('express');
 
-let http = require("http");
-let server = http.Server(app);
+var app = express();
 
-app.use(express.static("client"));
+var PORT = process.env.PORT || 3000;
 
-server.listen(PORT, function() {
-  console.log('Dictionary server is running');
+app.get("/", function(req, res) {
+  res.sendFile(__dirname + "/index.html");
 });
+
+app.use(express.static(__dirname + "/styles.css"));
+
+app.use(express.static(__dirname));
+
+app.listen(PORT, function() {
+    console.log('Server is running on PORT:',PORT);
+});
+

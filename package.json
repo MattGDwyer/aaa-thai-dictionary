@@ -2,10 +2,13 @@
   "name": "aaa_thai_dictionary",
   "version": "1.0.0",
   "description": "a Thai Dictionary designed to assist students of AAA Thai Language School",
-  "main": "app.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "main": "server.js",
   "scripts": {
     "test": "test",
-    "start": "app.js"
+    "start": "server.js"
   },
   "keywords": [
     "thai",
